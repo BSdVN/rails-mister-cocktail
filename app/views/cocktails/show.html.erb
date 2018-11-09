@@ -1,0 +1,11 @@
+<h1><%= @cocktail.name %></h1>
+
+<h3>Ingredients:</h3>
+
+<ol>
+  <li>
+    <% @cocktail.doses.each do |dose| %>
+    <%= dose.ingredient.name %> <%= dose.description %>
+    <% end %>
+  </li>
+</ol>
